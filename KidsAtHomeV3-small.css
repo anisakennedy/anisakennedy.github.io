@@ -66,6 +66,8 @@ div.navPgContent {
     margin: 1em;
     padding: 0.1em;
     text-decoration: none;
+    
+    -webkit-tap-highlight-color: #603C22;
 }
 
 /* Set background hover colour and stye for main link*/

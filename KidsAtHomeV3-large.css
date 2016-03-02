@@ -63,6 +63,8 @@ div.content {
     margin: 1em;
     padding: 0.1em;
     text-decoration: none;
+    
+    -webkit-tap-highlight-color: #603C22;
 }
 
 /* Set background hover colour and stye for main link*/
@@ -73,12 +75,6 @@ div.content {
     padding: 0.1em;
 }
 
-#mainLink:active {
-    background-color: #603C22;
-    border-radius: 1em;
-    margin: 1em;
-    padding: 0.1em;
-}
 
 /* Navigation Page */
 /* Set colour and style for nav links */
@@ -118,10 +114,6 @@ a.navLink {
     height: 9em;
    }
    
-   .sCircle1:active {
-    width: 9em;
-    height: 9em;
-   }
    
    /* Set attributes for longer words */
    #sCircle15 {
