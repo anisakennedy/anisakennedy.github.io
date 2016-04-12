@@ -57,6 +57,10 @@ div.dSocMediaWidgets {
     background-color: red;
 }
 
+div.fb-like {
+    background-color: yellow;
+}
+
 
 /* Body content */
 div.content {
