@@ -54,6 +54,10 @@ div.dSocMediaWidgets {
     padding: 0.5em;
 }
 
+div.fb-like {
+    vertical-align: middle;
+}
+
 /* Body content */
 div.content {
     text-align: center;
