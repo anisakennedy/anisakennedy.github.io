@@ -1,0 +1,13 @@
+/* Set the font for the whole website */
+body {
+    font-family: 'BigBottomCartoonRegular', sans-serif, Arial; 
+    font-weight: normal; 
+    font-style: normal;
+    background-image: url("12081-NO0THP.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #EBFAFF;
+    font-size: 16px;
+    /*font-size: 100%;*/
+}
+
