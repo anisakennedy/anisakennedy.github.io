@@ -59,7 +59,8 @@ div.dSocMediaWidgets {
 
 div.fb-like {
     background-color: yellow;
-    padding: 0.5em;
+    padding: 0;
+    margin: 0;
 }
 
 
