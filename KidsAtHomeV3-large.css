@@ -53,9 +53,7 @@ p.pPgTitle {
 div.dSocMediaWidgets {
     float: right;
     padding: 0.5em;
-    vertical-align: middle;
-    margin: 0.5em;
-    padding: 0.5em;
+    vertical-align: bottom;
     background-color: red;
 }
 
