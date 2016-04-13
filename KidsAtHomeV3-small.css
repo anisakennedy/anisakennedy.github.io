@@ -55,6 +55,12 @@ div.dSocMediaWidgets {
     vertical-align: middle;
 }
 
+div.fb-like {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
 
 /* Body content */
 div.content {
