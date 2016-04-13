@@ -57,6 +57,7 @@ div.dSocMediaWidgets {
 }
 
 div.fb-like {
+    float: right;
     padding: 0;
     margin: 0;
 }
