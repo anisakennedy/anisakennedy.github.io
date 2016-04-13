@@ -44,6 +44,7 @@ p.pPgTitle {
     
     -ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Safari */
+    -moz-transform: rotate(-10deg); /* mozilla */
     transform: rotate(-10deg);
     
     text-decoration: none;
@@ -53,8 +54,6 @@ p.pPgTitle {
 div.dSocMediaWidgets {
     float: right;
     padding: 0.5em;
-    vertical-align: bottom;
-    background-color: red;
 }
 
 div.fb-like {
