@@ -61,6 +61,22 @@ a.menuIcon {
     padding: 0;
 }
 
+div.dropdown-content {
+    -webkit-transform: translate(-240px, 0); /* For Safari 3.1 to 6.0 */
+    -moz-transform: translate(-240px, 0); /* mozilla */
+    -ms-transform: translate(-240px, 0);
+    transform: translate(-240px, 0);
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    transition: transform 2s;
+}
+
+/* fade in checked menu */    
+.menu-checkbox:checked + .dropdown-content {
+  transform: translate3d(0, 0, 0);
+}
+
 /* Social Media Widgets */
 div.dSocMediaWidgets {
     float: right;
@@ -229,6 +245,7 @@ a.navLink {
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         border-radius: 1em;
         z-index: 2;
+        transition: width 0.35s;
     }
     
     .dropdown-content a {
