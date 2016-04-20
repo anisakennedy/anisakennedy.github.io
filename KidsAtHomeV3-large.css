@@ -66,10 +66,10 @@ div.dropdown-content {
     -moz-transform: translate(-240px, 0); /* mozilla */
     -ms-transform: translate(-240px, 0);
     transform: translate(-240px, 0);
-    -webkit-transition: transform 2s;
-    -moz-transition: transform 2s;
-    -ms-transition: transform 2s;
-    transition: transform 2s;
+    -webkit-transition: transform 0.35s;
+    -moz-transition: transform 0.35s;
+    -ms-transition: transform 0.35s;
+    transition: transform 0.35s;
 }
 
 /* fade in checked menu */    
