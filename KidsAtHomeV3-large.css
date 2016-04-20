@@ -52,8 +52,13 @@ p.pPgTitle {
 
 /* Hamburger menu icon and email icon */
 i.material-icons {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #FFFF00;
+}
+
+a.menuIcon {
+    font-size: 1.5em;
+    padding: 0;
 }
 
 /* Social Media Widgets */
@@ -178,6 +183,7 @@ a.navLink {
     text-decoration: none;
     border-radius: 1em;
    }
+   
    
    ul {
     list-style-type: none;
