@@ -53,6 +53,10 @@ i.material-icons {
     color: #FFFF00;
 }
 
+a.menuIcon {
+    font-size: 1.5em;
+    padding: 0;
+}
 
 /* Social Media Widgets */
 div.dSocMediaWidgets {
@@ -172,74 +176,105 @@ a.navLink {
    a.aContentPagesNav{
     color: #FFFF00;
     text-align: left;
-    font-size: 1em;
-    padding: 0.1em;
+    font-size: 1.2em;
+    padding: 0.2em;
     text-decoration: none;
-    border-radius: 1em;
    }
    
+    .dContentMenu {
+	position: fixed;
+	text-align: center;
+	overflow: hidden;
+	z-index: -1;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: rgba(0,0,0,0.8);
+	-webkit-transition: all 0.3s ease-in-out; 
+	-moz-transition: all 0.3s ease-in-out; 
+	-o-transition: all 0.3s ease-in-out; 
+	transition: all 0.3s ease-in-out;
+}
+   
    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: transparent;
-    z-index: 2; /* set z-index of all list item s for dropdown nav to be higher than content so nav appears on top*/
-    }
-    
-    li {
-        float: left;
-        z-index: 2;
-    }
-    
-    li a {
-        display: inline-block;
-        color: #FFFF00;
-        text-align: center;
-        padding: 0.5em;
-        text-decoration: none;
-        font-size: 0.75em;
-        border-radius: 1em;
-        z-index: 2;
-    }
-    
-    li a:hover, .dropdown:hover {
-        background-color: #603C22;
-        border-radius: 1em;
-        z-index: 2;
-    }
-    
-    li.dropdown {
-        display: inline-block;
-        z-index: 2;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #c0c0c0;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        border-radius: 1em;
-        z-index: 2;
-    }
-    
-    .dropdown-content a {
-        color: #FFFF00;
-        padding: 0.5em;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        font-size: 0.75em;
-        z-index: 2;
-    }
-    
-    .dropdown-content a:hover {background-color: #603C22}
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
+	position: relative;
+	top: 20%;
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+	-webkit-transition: all 0.3s ease-in-out; 
+	-moz-transition: all 0.3s ease-in-out; 
+	-o-transition: all 0.3s ease-in-out; 
+	transition: all 0.3s ease-in-out;
+}
+
+li { 
+	display: block; 
+	margin: 0.5em;
+    padding: 0.5em;
+}
+
+li a.contentMenuLink {
+	border-radius: 1em;
+	padding: 1em;
+	border: 0.1em solid transparent;
+	text-decoration: none;
+	font-size: 1em;
+	color: #FFFF00;
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+li a.contentMenuLink:hover {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    opacity: 0.9;
     }
 
+li a.contentMenuLink i { 
+	margin-right: 0.1em; 
+	font-size: 1em;
+}
+
+#toggleMenuLabel {
+	color: #FFFF00;
+	background: rgba(0,0,0,0.2);
+	text-align: center;
+	line-height: 1em;
+	font-size: 1em;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	z-index: 500;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 0.25em;
+}
+
+#hamburgerMenu { display: none; }
+
+#hamburgerMenu:checked ~ .dContentMenu { 
+	opacity: 1;
+	z-index: 400;
+}
+
+#hamburgerMenu:checked ~ .dContentMenu ul {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+#hamburgerMenu:checked ~ #toggleMenuLabel { 
+	background: #FFFFFF; 
+	color: #FFFF00;
+}
+   
    
    /* Content Text */
    p.pContentText {
