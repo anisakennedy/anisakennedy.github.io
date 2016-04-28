@@ -213,13 +213,14 @@ a.navLink {
 
 li { 
 	display: block; 
-	margin: 0.5em;
-    padding: 0.5em;
+	margin: 0.2em;
+    padding: 0.2em;
 }
 
 li a.contentMenuLink {
 	border-radius: 1em;
-	padding: 1em;
+    display: block;
+	padding: 0.3em;
 	border: 0.1em solid transparent;
 	text-decoration: none;
 	font-size: 1em;
