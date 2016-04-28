@@ -229,6 +229,8 @@ li a.contentMenuLink {
 	-moz-transition: all 0.2s ease-in-out; 
 	-o-transition: all 0.2s ease-in-out; 
 	transition: all 0.2s ease-in-out;
+    
+    -webkit-tap-highlight-color: #FFFFFF;  /* change colour on hover for iOS touchscreens */
 }
 
 li a.contentMenuLink:hover {

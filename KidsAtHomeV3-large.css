@@ -246,7 +246,7 @@ li {
 
 li a.contentMenuLink {
 	border-radius: 2em;
-	padding: 1em;
+	padding: 0.5em;
 	border: 0.1em solid transparent;
 	text-decoration: none;
 	font-size: 1.5em;
@@ -255,6 +255,8 @@ li a.contentMenuLink {
 	-moz-transition: all 0.2s ease-in-out; 
 	-o-transition: all 0.2s ease-in-out; 
 	transition: all 0.2s ease-in-out;
+    
+    -webkit-tap-highlight-color: #FFFFFF;  /* change colour on hover for iOS touchscreens */
 }
 
 li a.contentMenuLink:hover {
