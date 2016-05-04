@@ -106,6 +106,30 @@ div.navPgContent {
 /* Navigation Page */
 /* Set colour and style for nav links */
 
+.dNavPageMenu {
+	text-align: center;
+	width: 80%;
+    padding: 0.5em;
+}
+
+a.navPageMenuLink {
+	border-radius: 2em;
+	padding: 0.3em;
+	border: 0.1em solid transparent;
+	text-decoration: none;
+	font-size: 1em;
+	color: #FFFF00;
+    display: block;
+    
+    -webkit-tap-highlight-color: #FFFFFF; /* change colour on hover for iOS touchscreens */
+}
+
+a.navPageMenuLink:hover {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    }
+
 a.navLink {
     color: #603C22;
     text-align: center;
@@ -116,46 +140,14 @@ a.navLink {
 }
 
 
-/* Format main nav circles */
-   span.sCircle1 {
-    display: inline-block;
-    margin: 0.1em;
-    border-radius: 10em;
-    transition: width 1s, height 1s;
-   }
-   
-   /* Set opacity and size */
-   .sCircle1 {
-    background: #FFFFFF;
-    padding: 1em;
-    width: 3em;
-    height: 3em;
-    opacity: 0.9;
-    filter: alpha(opacity=90); /* for IE8 and earlier */
-   }
-   
-   /* Set to grow on mouse over */
-   .sCircle1:hover {
-    width: 4em;
-    height: 4em;
-   }
-   
-   /* Set attributes for longer words */
-   #sCircle15 {
-     text-align: right;
-   }
-   
-   #navLink15 {
-     letter-spacing: -0.2em;
-     font-size: 0.6em;
-     text-align: center;
-   }
 
    /* Content Pages */
    
    /* Content Title */
    div.dContentPgTitle {
-     text-align: center; 
+     text-align: center;
+     display: inline-block;
+     width: 100%;
    }
    
    p.pContentPgTitle {
@@ -166,7 +158,7 @@ a.navLink {
    
    a.aContentPgTitleLink {
      color: #FFFF00;
-     margin: 1em;
+     margin: 0.5em;
      font-size: 1.5em;
      text-decoration: none;
    }
@@ -198,7 +190,7 @@ a.navLink {
 	transition: all 0.3s ease-in-out;
 }
    
-   ul {
+   ul.listContentMenu {
 	position: relative;
 	top: 20%;
 	-webkit-transform: scale(2);
@@ -211,13 +203,13 @@ a.navLink {
 	transition: all 0.3s ease-in-out;
 }
 
-li { 
+li.menuList { 
 	display: block; 
 	margin: 0.2em;
     padding: 0.2em;
 }
 
-li a.contentMenuLink {
+li.menuList a.contentMenuLink {
 	border-radius: 1em;
     display: block;
 	padding: 0.3em;
@@ -233,13 +225,13 @@ li a.contentMenuLink {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0.8);  /* change colour on hover for iOS touchscreens */
 }
 
-li a.contentMenuLink:hover {
+li.menuList a.contentMenuLink:hover {
     border-color: #FFFFFF;
     background-color: #FFFFFF;
-    opacity: 0.9;
+    opacity: 0.8;
     }
 
-li a.contentMenuLink i { 
+li.menuList a.contentMenuLink i { 
 	margin-right: 0.1em; 
 	font-size: 1em;
 }
@@ -266,7 +258,7 @@ li a.contentMenuLink i {
 	z-index: 400;
 }
 
-#hamburgerMenu:checked ~ .dContentMenu ul {
+#hamburgerMenu:checked ~ .dContentMenu ul.listContentMenu {
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-ms-transform: scale(1);
