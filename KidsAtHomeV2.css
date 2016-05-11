@@ -1,0 +1,214 @@
+/* Set the font for the whole website */
+body {
+    font-family: 'BigBottomCartoonRegular', sans-serif, Arial; 
+    font-weight: normal; 
+    font-style: normal;
+    background-color: #EBFAFF;
+}
+
+/* Set background and text colour for headings */
+h1.pgTitle {
+    color: #000000;
+    background-color: #1F7A99;
+    display: inline;
+    padding-right: 100%;
+    padding-left: 5%;
+}
+
+/* Home Page */
+
+  /* Set container for header */
+  #header {
+    border:1px solid #bbb;
+	height:125px;
+	padding:10px;
+   }
+
+  /* Set container for main content */
+  #content {
+    margin-top:10px;
+	padding-bottom:10px;
+    border: 1px solid #bbb;
+   }
+   
+   
+  /* Format main nav bar (remove bullets, padding etc.) */
+  #ulMainNav {
+     display: inline;
+     float: left; list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+   }
+   
+   /* Set nav bar as horizontal */
+   li.liMainNav {
+      float: left;
+    }
+
+   /* Format main nav links */
+   a.aMainNav:link, a.aMainNav:visited {
+     display: block;
+     width: 120px;
+     font-weight: bold;
+     color: #000000;
+     background-color: #29A3CC;
+     text-align: center;
+     padding: 4px;
+     text-decoration: none;
+   }
+
+   a.aMainNav:hover, a.aMainNav:active {
+    background-color: #2EB8E6;
+   }
+   
+   /* Set spacer sizes */   
+   span.circleSpacer {
+    width: 50px;
+   }
+   
+   
+   /* Format main layout circles */
+   span.sCircle1 {
+    border-radius: 100px;
+    transition: width 2s, height 2s;
+   }
+   
+   /* Set opacity and size */
+   #sCircle11 {
+    background: #99E6FF;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    opacity: 0.25;
+    filter: alpha(opacity=25); /* for IE8 and earlier */
+   }
+   
+   /* Set to grow on mouse over */
+   #sCircle11:hover {
+    width: 40px;
+    height: 40px;
+   }
+   
+   #sCircle12 {
+    background: #70DBFF;
+    padding: 40px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* for IE8 and earlier */
+   }
+   
+   #sCircle12:hover {
+    width: 60px;
+    height: 60px;
+   }
+   
+   #sCircle13 {
+    background: #47D1FF;
+    padding: 60px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* for IE8 and earlier */
+   }
+   
+   #sCircle13:hover {
+    width: 80px;
+    height: 80px;
+   }
+   
+   #sCircle14 {
+    background: #2EB8E6;
+    padding: 70px;
+    width: 70px;
+    height: 70px;
+    float: left;
+   }
+   
+   #sCircle14:hover {
+    width: 90px;
+    height: 90px;
+   }
+   
+    /* Format main layout circles - set 2 */
+   span.sCircle2 {
+    border-radius: 100px;
+    transition: width 2s, height 2s;
+   }
+   
+   /* Set opacity and size */
+   #sCircle21 {
+    clear: left;
+    background: #99E6FF;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    opacity: 0.25;
+    filter: alpha(opacity=25); /* for IE8 and earlier */
+   }
+   
+   /* Set to grow on mouse over */
+   #sCircle21:hover {
+    width: 40px;
+    height: 40px;
+   }
+   
+   #sCircle22 {
+    background: #66FFC0;
+    padding: 40px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* for IE8 and earlier */
+   }
+   
+   #sCircle22:hover {
+    width: 60px;
+    height: 60px;
+   }
+   
+   #sCircle23 {
+    background: #00FFCC;
+    padding: 60px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* for IE8 and earlier */
+   }
+   
+   #sCircle23:hover {
+    width: 80px;
+    height: 80px;
+   }
+   
+   #sCircle24 {
+    background: #00CCA3;
+    padding: 70px;
+    width: 70px;
+    height: 70px;
+    float: left;
+   }
+   
+   #sCircle24:hover {
+    width: 90px;
+    height: 90px;
+   }
+   
+   /* Set footer */
+   #footer {
+    float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	border:1px solid #bbb;
+	width:878px;
+   }
+
+    
