@@ -9,6 +9,8 @@
     <link rel="stylesheet" media="(max-width:700px)" href="KidsAtHomeV3-small.css" type="text/css"/>
     <link rel="stylesheet" media="(min-width:701px)" href="KidsAtHomeV3-large.css" type="text/css"/>
     
+    <!-- Add lightbox for images -->
+    <link rel="stylesheet" href="lightbox2/lightbox2-master/dist/css/lightbox.css" type="text/css"/>
     
     <!-- Add Google+1 API -->
     <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
@@ -16,19 +18,9 @@
     <!-- Google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-    <title>Kids@Home Baking Page</title>
+    <title>Kids@Home Baking - Biscuits</title>
 </head>
 <body>
-    
-    <!-- Facebook code -->
-    <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="header">
       <!-- Start with the title and navigation-->
@@ -41,6 +33,7 @@
             <li class="menuList">
               <a href="KidsAtHomeV3.html" class="contentMenuLink">Home</a>
               <a href="KidsAtHomePaper.html" class="contentMenuLink">Paper</a>
+              <a href="KidsAtHomeBaking.html" class="contentMenuLink">Baking</a>
               <a href="KidsAtHomeModels.html" class="contentMenuLink">Models</a>
               <a href="KidsAtHomeGames.html" class="contentMenuLink">Games</a>
               <a href="KidsAtHomeExperiments.html" class="contentMenuLink">Experiments</a>
@@ -62,47 +55,81 @@
              data-action="like" data-show-faces="false" data-share="false"></div>
     </div>
     
-    
-    
-    
-    
-    <!-- Heading -->
-    <div class="dContentPgTitle">
-      <p class="pContentPgTitle">Baking</p>
+    <!-- Use lightbox2 for photo display ??-->
+    <div class="dContentPgTitle"> 
+      <a class="aContentPgTitleLink" href="KidsAtHomeBaking.html">Baking</a>
+      <p class="pContentPgTitle">Oat Biscuits</p>
     </div>
     
-    <!-- Set links and image for each item -->
+    <!-- Set photo links and text -->
     <div class="dContent">
-      <div class="polaroidRight">
-        <img src="images/biscuits.jpg" alt="Biscuits" style="width:100%">
-        <a class="aContentLink" href="KidsAtHomeBakingBiscuits.html" ontouchstart="">Biscuits</a>
+      <div class="dContentTextCentre">
+        <p class="pContentText">Making oat biscuits<br />
+          Ingredients: 75g demerera sugar, 75g butter, 75g self raising flour, 75g porridge oats, 1 teaspoon baking powder,
+        1 tablespoon golden syrup, 1 tablespoon milk</p> 
       </div>
-  
-      <div class="polaroidLeft">
-        <img src="images/image-2.jpg" alt="Cakes" style="width:100%">
-        <a class="aContentLink" href="KidsAtHomeBakingLargeCakes.html" ontouchstart="">Large Cakes</a>
-      </div>
-    
-      <div class="polaroidCentre">
-        <img src="images/cakesdecorate3.jpg" alt="Fairy Cakes" style="width:100%">
-        <a class="aContentLink" href="KidsAtHomeBakingFairyCakes.html" ontouchstart="">Fairy Cakes</a>
-      </div>
-      
-      <div class="polaroidRight">
-        <img src="images/image-2.jpg" alt="Meringues" style="width:100%">
-        <a class="aContentLink" href="KidsAtHomePaperCrayonRubbings.html" ontouchstart="">Meringues</a>
-      </div>
-      
-      <div class="polaroidLeft">
-        <img src="images/image-1.jpg" alt="Jam Tarts" style="width:100%">
-        <a class="aContentLink" href="KidsAtHomeBakingJamTarts.html" ontouchstart="">Jam Tarts</a>
+      <div class="dContentTextCentre">
+        <p class="pContentText">An easy oat biscuit recipe with no rolling out</p> 
       </div>
     </div>
+    <div class="dContentPics">
+      <div class="polaroidLeft">
+        <a href="images/biscuitstray.jpg" data-lightbox="test" data-title="Weigh ingredients">
+          <img src="images/biscuitstray.jpg" alt="Weigh ingredients" style="width:100%">
+        </a>
+        <p class="pContentText">Preheat the oven to 170 deg C and line a baking tray with baking parchment or greasproof paper</p>
+      </div>
+
+      <div class="polaroidRight">
+        <a href="images/biscuitsdry.jpg" data-lightbox="test" data-title="Mix dry ingredients">
+          <img src="images/biscuitsdry.jpg" alt="Mix dry ingredients" style="width:100%">
+        </a>
+        <p class="pContentText">Let the children weigh out the oats, flour, sugar and baking powder and mix them together
+        in a large bowl</p>
+      </div>
+
+      <div class="polaroidCentre">
+        <a href="images/biscuitsmelt.jpg" data-lightbox="test" data-title="Melt butter">
+          <img src="images/biscuitsmelt.jpg" alt="Melt butter" style="width:100%">
+        </a>
+        <p class="pContentText">Using a saucepan or a microwave melt the butter, milk and syrup</p>
+      </div>
     
+      <div class="polaroidRight">
+        <a href="images/biscuitsmix.jpg" data-lightbox="test" data-title="Mix all ingredients">
+          <img src="images/biscuitsmix.jpg" alt="Mix all ingredients" style="width:100%">
+        </a>
+        <p class="pContentText">Add the melted butter mixture to the dry ingredients and let the kids mix it all together</p>
+      </div>
+      
+      <div class="polaroidCentre">
+        <a href="images/biscuitsraw.jpg" data-lightbox="test" data-title="Spoon out">
+          <img src="images/biscuitsraw.jpg" alt="Spoon out" style="width:100%">
+        </a>
+        <p class="pContentText">Let the kids spoon out about 12 dollops of mixture onto the baking tray and make sure there's some
+        space between them as the biscuits will spread when they're cooking</p>
+      </div>
+      
+      <div class="polaroidLeft">
+        <a href="images/biscuitscooked.jpg" data-lightbox="test" data-title="Bake">
+          <img src="images/biscuitscooked.jpg" alt="Bake" style="width:100%">
+        </a>
+        <p class="pContentText">Bake in the centre of the oven for 10 minutes or until the biscuits are golden brown</p>
+      </div>
+      
+      <div class="polaroidRight">
+        <a href="images/biscuits.jpg" data-lightbox="test" data-title="Cool">
+          <img src="images/biscuits.jpg" alt="Cool" style="width:100%">
+        </a>
+        <p class="pContentText">Leave the biscuits to cool for 5 minutes on the tray before moving them</p>
+      </div>
+      
+    </div>
+
     
+    <script src="lightbox2/lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" async defer src="http://assets.pinterest.com/js/pinit.js"></script>
-
     
     <div class="footer">
         <a class="bg-attribute" target="_blank" href='http://www.freepik.com/free-vector/happy-kids-silhouttes_786265.htm'>Background image designed by Freepik</a>
