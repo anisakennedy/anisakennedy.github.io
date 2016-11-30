@@ -67,6 +67,11 @@ div.dSocMediaWidgets {
     padding: 0.5em;
 }
 
+div.fb-share-button {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
 div.fb-like {
     float: right;
     padding: 0;
